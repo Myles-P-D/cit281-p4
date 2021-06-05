@@ -5,16 +5,21 @@
 This project we created a REST API that worked with a data code module.    
 The REST API returns an object containing any errors as well as the specfied question or answer or both.   
 Most of the code was written inside a module that was exported to the server as well as data stored in a library titled *data* exported to the webserver. 
+    
+**[p4 Repo](https://github.com/Myles-P-D/cit281-p4)**   
    
-**[p4 Repo](https://github.com/Myles-P-D/cit281-p4)**
-## Code:
+## Code:   
    
 Here are links to all of the project code:     
+   
 **[Data](https://github.com/Myles-P-D/cit281-p4/blob/main/p4-data.js)**    
+   
 **[Module](https://github.com/Myles-P-D/cit281-p4/blob/main/p4-module.js)**    
+   
 **[Server](https://github.com/Myles-P-D/cit281-p4/blob/main/p4-server.js)**  
     
 Here is an excerpt of the code from the exported module.    
+   
 ```javascript
 const getQuestion = (num) =>
 {
@@ -45,6 +50,7 @@ const getQuestion = (num) =>
 ```
    
 Here is an excerpt of the code for the REST API.    
+   
 ```javascript
 const fastify = require("fastify")();
 
@@ -59,15 +65,18 @@ fastify.get("/cit/question", (request, response) =>
     response.send(o);
 });
 ```
-
+   
 ## Images:   
     
 Question route image.   
+   
 ![question route](https://github.com/Myles-P-D/cit281-p4/blob/main/questionRoute.png?raw=true)    
    
 Question 2 route image.    
+   
 ![question 2 route](https://github.com/Myles-P-D/cit281-p4/blob/main/question2.png?raw=true)    
    
-Question and Answer 3 route image.    
+Question and Answer 3 route image. 
+   
 ![question answer 3 route](https://github.com/Myles-P-D/cit281-p4/blob/main/questionAnswer3.png?raw=true)    
 
